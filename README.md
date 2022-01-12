@@ -2,7 +2,7 @@
 
 - 🔭 I’m currently working as Cloud Migration & Implementation Analyst
 
-<div align="center">
+<div >
   <a href="https://github.com/JesusFrontelo/">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=JesusFrontelo&show_icons=true&count_private=true&theme=highcontrast&include_all_commits=true"/>
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JesusFrontelo&layout=compact&theme=highcontrast&langs_count=7"/>
