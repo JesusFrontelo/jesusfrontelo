@@ -13,6 +13,7 @@
   <img align="center" alt="Jesus-css3" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
   <img align="center" alt="Jesus-ps1" height="30" width="40" src="https://docs.microsoft.com/es-es/powershell/media/index/ps_black_128.svg" />
   <img align="center" alt="Jesus-oracle" height="60" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" />
+  <img align="center" alt="Jesus-aws" height="60" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" /> 
 <!--  <img align="right" alt="Rafa-pic" height="150" style="border-radius:50px;" src="https://media.discordapp.net/attachments/639956127056134178/890373478988013628/Publicacoes_Instagram_1_1.png?width=676&height=676">-->
 </div>  
 
