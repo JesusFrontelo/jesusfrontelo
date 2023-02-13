@@ -1,6 +1,6 @@
 ## ¡Hi! I´m Jesús Frontelo 👋
 
-- 🔭 I’m currently working as Cloud Migration & Implementation Analyst
+- 🔭 I’m currently working as Cloud Migration & Implementation Senior Analyst
 
 <div align="center">
   <a href="https://github.com/JesusFrontelo/">
