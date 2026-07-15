@@ -19,12 +19,6 @@ jobs:
         sudo apt-get install -y cloc jq python3 python3-pip git
         pip3 install matplotlib
 
-    - name: Authenticate GitHub CLI
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        echo "${GH_TOKEN}" | gh auth login --with-token
-
     - name: Run stats.sh
       run: |
         chmod +x scripts/stats.sh
