@@ -1,6 +1,6 @@
 ## ¡Hi! I´m Jesús Frontelo 👋
 
-- 🔭 I’m currently working as Infra Transformation Specialist
+- 🔭 I’m currently working as Cloud Enablemnet Tech Lead
 
 <div align="center">
   <a href="https://github.com/JesusFrontelo/">
