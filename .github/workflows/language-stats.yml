@@ -1,0 +1,43 @@
+name: Update Language Stats
+
+on:
+  schedule:
+    - cron: "0 3 * * 1"   # Cada lunes a las 03:00
+  workflow_dispatch:       # Permite ejecutarlo manualmente
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y cloc jq python3 python3-pip git
+        pip3 install matplotlib
+
+    - name: Authenticate GitHub CLI
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        echo "${GH_TOKEN}" | gh auth login --with-token
+
+    - name: Run stats.sh
+      run: |
+        chmod +x scripts/stats.sh
+        ./scripts/stats.sh
+
+    - name: Generate chart
+      run: |
+        python3 scripts/generate_chart.py
+
+    - name: Commit updated PNG
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
+        git add jesus_frontelo_languages.png
+        git commit -m "Auto-update language stats chart" || echo "No changes to commit"
+        git push
