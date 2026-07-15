@@ -1,3 +1,4 @@
+<!--
 ## 📊 Lenguajes reales usados en mis repos
 
 Este gráfico muestra **todos los lenguajes detectados** en mis repositorios públicos, basados en líneas de código reales (LOC):
@@ -7,10 +8,8 @@ Este gráfico muestra **todos los lenguajes detectados** en mis repositorios pú
 </p>
 
 > 🔍 Datos generados automáticamente con `cloc` + `gh api` + Python.
-
-
-<!--
-### Quitar ESTE COMENTARIO
+U####### UNCOMENT THIS SECTION TO USE GITHUB ACTIONS #########
+-->
 
 ## ¡Hi! I´m Jesús Frontelo 👋
 
@@ -22,8 +21,6 @@ Este gráfico muestra **todos los lenguajes detectados** en mis repositorios pú
     <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JesusFrontelo&theme=highcontrast&langs_count=7" />
     <!--<img height="180em" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=JesusFrontelo&show_icons=true&count_private=true&theme=highcontrast&include_all_commits=true"/>
     <img height="180em" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=JesusFrontelo&theme=highcontrast&langs_count=7"/>-->
-<!--
-###QUITAR ESTE COMENTARIO
   </a>
 </div>
 
@@ -35,13 +32,10 @@ Este gráfico muestra **todos los lenguajes detectados** en mis repositorios pú
   <img align="center" alt="Jesus-aws" height="60" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" /> 
   <img align="center" alt="Jesus-python" height="60" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" /> 
 <!--  <img align="right" alt="Rafa-pic" height="150" style="border-radius:50px;" src="https://media.discordapp.net/attachments/639956127056134178/890373478988013628/Publicacoes_Instagram_1_1.png?width=676&height=676">-->
-<!--
-##QUITAR ESTE COMENTARIO
 </div>  
 
  ##
-  
-<!--
+<!--  
 **JesusFrontelo/jesusfrontelo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
