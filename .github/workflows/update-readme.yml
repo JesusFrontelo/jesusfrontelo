@@ -1,0 +1,58 @@
+name: Update README with Language Stats
+
+on:
+  schedule:
+    - cron: "0 3 * * 1"   # Cada lunes a las 03:00
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y cloc jq python3 python3-pip git
+        pip3 install matplotlib
+
+    - name: Authenticate GitHub CLI
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        echo "${GH_TOKEN}" | gh auth login --with-token
+
+    - name: Run stats.sh
+      run: |
+        chmod +x scripts/stats.sh
+        ./scripts/stats.sh
+
+    - name: Generate chart
+      run: |
+        python3 scripts/generate_chart.py
+
+    - name: Update README
+      run: |
+        DATE=$(date +"%Y-%m-%d %H:%M")
+        sed -i '/<!--LANG-STATS-START-->/,/<!--LANG-STATS-END-->/c\
+<!--LANG-STATS-START-->\
+## 📊 Lenguajes reales usados en mis repos\
+\
+Última actualización automática: **'"$DATE"'**\
+\
+<p align="center">\
+  <img src="https://raw.githubusercontent.com/JesusFrontelo/JesusFrontelo/main/jesus_frontelo_languages.png" width="80%">\
+</p>\
+\
+<!--LANG-STATS-END-->' README.md
+
+    - name: Commit changes
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
+        git add README.md jesus_frontelo_languages.png
+        git commit -m "Auto-update README with language stats" || echo "No changes to commit"
+        git push
